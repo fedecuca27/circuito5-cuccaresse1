@@ -7,25 +7,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,900&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilo.css">
     <title>Circuito5</title>
     <link rel="icon" type="image/jpg" href="imagenes/logocircuito.jpg">
 </head>
 <body class="body">
-    <header class="fondoHeader nav">
-        <div class="logoHeader">
-            <img src="imagenes/logocircuito.jpg" alt="logo provisorio">
-        </div>
-       
-        <nav>
-            <ul class="menu">
-                <li class="linkDos"><a class="letraHeader" href="index.html">Home</a></li>
-                <li class="linkDos"><a class="letraHeader" href="html/2servicios.html">Servicios</a></li>
-                <li class="linkDos"><a class="letraHeader" href="html/3nosotros.html">Nosotros</a></li>
-                <li class="linkDos"><a class="letraHeader" href="html/4galeria.html">Galeria</a></li>
-                <li class="linkDos"><a class="letraHeader" href="html/5contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="nav">
+        <nav class="navbar navbar-expand-lg navbar-dark fondoHeader">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logoHeader" src="imagenes/logocircuito.jpg" alt="logo provisorio">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="linkDos nav-item">
+                            <a class="letraHeader nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="linkDos nav-item">
+                            <a class="letraHeader nav-link active" aria-current="page" href="html/2servicios.html">Servicios</a>
+                        </li>
+                        <li class="linkDos nav-item">
+                            <a class="letraHeader nav-link active" aria-current="page" href="html/3nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="linkDos nav-item">
+                            <a class="letraHeader nav-link active" aria-current="page" href="html/4galeria.html">Galeria</a>
+                        </li>
+                        <li class="linkDos nav-item">
+                            <a class="letraHeader nav-link active" aria-current="page" href="html/5contacto.html">Contacto</a>
+                        </li>
+                     
+                    </ul>
+                </div>
+            </div>
+         </nav>
     </header>
     
     <main class="letraMain fondoMain"  id="indexGrid">
@@ -48,6 +67,74 @@
             <img src="imagenes/interior1.jpg" alt="">
         </div>
 
+        <div id="a6">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 3"></button>
+
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active imagenesCarousel">
+                    <img src="imagenes/car01.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item imagenesCarousel">
+                    <img src="imagenes/car02.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item imagenesCarousel">
+                    <img src="imagenes/car03.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item imagenesCarousel">
+                    <img src="imagenes/car04.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item imagenesCarousel">
+                    <img src="imagenes/car05.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item imagenesCarousel">
+                    <img src="imagenes/car06.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item imagenesCarousel">
+                    <img src="imagenes/car07.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item imagenesCarousel">
+                    <img src="imagenes/car08.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item imagenesCarousel">
+                    <img src="imagenes/car09.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item imagenesCarousel">
+                    <img src="imagenes/car10.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item imagenesCarousel">
+                    <img src="imagenes/car11.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item imagenesCarousel">
+                    <img src="imagenes/car12.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
+        </div>
+
 
 
 
@@ -68,7 +155,6 @@
                     <p>Tel: 11-3005-2984</p>
                 </li>
             </ul>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.84059414869!2d-58.4913758!3d-34.5862!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6ac687767131568!2sCIRCUITO%205!5e0!3m2!1ses!2sar!4v1642903126748!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="redesSociales">
             <div><p>Seguinos en nuestras redes!</p></div>
