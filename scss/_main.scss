@@ -1,0 +1,45 @@
+@import "variables.scss";
+.main{
+    
+    &.fondoMain {
+        background-image: url(../imagenes/fondo2.jpg);
+        background-repeat: repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100%;
+        border: $borderCajas;
+        padding: $paddingFondo;
+             &.letraMain {
+                 color: $colorLetra;
+                 font-weight: normal;
+                 font-family: $fontMain;
+             }
+    }
+    .tituloPrincipal {
+        color: $colorTitulo;
+        font-family: $fontTitulos;
+        font-weight: bolder;
+        font-size: $fontSizeTitulo;
+        text-align: center;
+            .tituloMain {
+                font-family: $fontTitulos;
+                text-align: left;
+            }
+    }
+    .mainDos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .mainGaleria {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+}
+   
+   
