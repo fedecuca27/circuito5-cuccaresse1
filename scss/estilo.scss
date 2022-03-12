@@ -29,10 +29,24 @@
 }
 body {
 	width: 100vw;
-	height: 1650px;
+	height: 1800px;
 }
 a {
 	text-decoration: none;
+}
+
+@mixin botones($anchoBtn, $altoBtn, $colorbtn, $colorLetraBtn, $tamanioLetraBtn, $fontLetraBtn, $bordeBtn) {
+	width: $anchoBtn;
+	height: $altoBtn;
+	background-color: $colorbtn;
+	color: $colorLetraBtn;
+	font-size: $tamanioLetraBtn;
+	font-family: $fontLetraBtn;	
+	border: $bordeBtn;
+}
+
+.botonAlMapa{
+	@include botones($anchoBoton, $altoBoton, $colorBoton, $colorLetraBoton, $fontSizeBoton, $fontBoton, $borderBoton)
 }
 
 
@@ -67,168 +81,6 @@ img {
 	border: 5px double grey;
 	padding: 1px 1px 1px 1px;
 }
-#encuestaGrid {
-	display: grid;
-	width: 100%;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 150px 100px 500px;
-	grid-template-areas: "a1 a1 a1" "b1 b1 b0" "c0 c1 c1" "d1 d1 d1";
-	justify-items: center;
-	align-items: center;
-}
-#encuesta {
-	grid-area: c1;
-}
-#nosotrosGrid {
-	display: grid;
-	width: 100%;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 150px 100px 170px 170px;
-	grid-template-areas: "a1 a1 a1 a1" "b1 b1 b0 bo" "c0 c0 c1 c1" "c0 c0 c1 c1" "d1 d1 d1 d1";
-	justify-items: center;
-	align-items: center;
-}
-#parrafo {
-	grid-area: c1;
-}
-.nosotrosParrafo {
-	border: $borderNosotros;
-	padding: $paddingNosotros;
-	margin: $marginNosotros;
-}
-.serv1 {
-	border: $borderNosotros;
-	padding: $paddingNosotros;
-	margin: $marginNosotros;
-}
-.serv2 {
-	border: $borderNosotros;
-	padding: $paddingNosotros;
-	margin: $marginNosotros;
-}
-.serv3 {
-	border: $borderNosotros;
-	padding: $paddingNosotros;
-	margin: $marginNosotros;
-}
-.serv4 {
-	border: $borderNosotros;
-	padding: $paddingNosotros;
-	margin: $marginNosotros;
-}
-.serv5 {
-	border: $borderNosotros;
-	padding:  $paddingNosotros;
-	margin: $marginNosotros;
-}
-#galeriaGrid {
-	display: grid;
-	width: 100%;
-	grid-template-columns: 33.3% 33.3% 33.3%;
-	grid-template-rows: 150px 100px 50px 310px 310px 50px 310px 50px 310px;
-	grid-template-areas: "a1 a1 a1" "b1 b1 b1" "c1 c1 c0" "d1 d2 d3" "d0 d4 d5" "e1 e0 e0" "f1 f1 f2" "g1 g0 g0" "h1 h2 h3";
-	align-items: center;
-	justify-items: center;
-}
-#subTituloUno {
-	grid-area: b1;
-	justify-self: left;
-}
-#subTituloDos {
-	grid-area: c1;
-	justify-self: left;
-}
-#fotoUno {
-	grid-area: d1;
-}
-#fotoDos {
-	grid-area: d2;
-}
-#fotoTres {
-	grid-area: d3;
-}
-#fotoCuatro {
-	grid-area: d4;
-}
-#subTituloTres {
-	grid-area: e1;
-	justify-self: left;
-}
-#fotoCinco {
-	grid-area: f1;
-}
-#subTituloCuatro {
-	grid-area: g1;
-	justify-self: left;
-}
-#fotoSeis {
-	grid-area: h1;
-}
-#fotoSiete {
-	grid-area: h2;
-}
-#fotoOcho {
-	grid-area: h3;
-}
-#serviciosGrid {
-	display: grid;
-	width: 100%;
-	grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
-	grid-template-rows: 150px 80px 100px 150px 150px 150px 150px 150px;
-	grid-template-areas: "a0 a1 a1 a1 a1 a1 a1 a2" "b1 b1 b1 b1 b0 b0 b0 b0" "c0 c1 c1 c1 c1 c2 c2 c2" "d1 d1 d1 d1 d0 d0 d0 d0" "e0 e1 e1 e1 e1 e2 e2 e2" "f0 f0 f1 f1 f1 f1 f2 f2" "g0 g0 g0 g1 g1 g1 g1 g2" "h0 h0 h0 h0 h1 h1 h1 h1";
-}
-#a1 {
-	grid-area: a1;
-	grid-area: a1;
-}
-#a2 {
-	grid-area: b1;
-}
-#a3 {
-	grid-area: c1;
-	justify-self: center;
-	align-self: center;
-}
-#a4 {
-	grid-area: d1;
-}
-#a5 {
-	grid-area: e1;
-}
-#a6 {
-	grid-area: f1;
-}
-#a7 {
-	grid-area: g1;
-}
-#a8 {
-	grid-area: h1;
-}
-#indexGrid {
-	display: grid;
-	width: 100%;
-	grid-template-columns: 2fr 1fr 1fr 1fr;
-	grid-template-rows: 150px 100px 250px 250px 250px;
-	grid-template-areas: "a1 a1 a1 a1" "b1 b1 b0 b0" "c1 c1 d1 d1" "c1 c1 e1 e1" "c1 c1 e1 e1" "f1 f1 f1 f1";
-}
-#b1 {
-	grid-area: b1;
-}
-#c1 {
-	grid-area: c1;
-	justify-self: center;
-	align-self: center;
-}
-#d1 {
-	grid-area: d1;
-	justify-self: center;
-	align-self: center;
-}
-#e1 {
-	grid-area: e1;
-	justify-self: center;
-	align-self: center;
-}
 
 .linkUno {
 	&:hover {
@@ -244,11 +96,25 @@ img {
 		transition: all 1s;
 	}
 }
-.imagenesCarousel {
-	width: 100vw;
-	height: 400px;
-}
+
 @media only screen and (max-width: 600px) {
+	.tituloPrincipal {
+        color: $colorTitulo;
+        font-family: $fontTitulos;
+        font-weight: bolder;
+        font-size: $fontSizeTituloMediaQ !important;
+        text-align: center;
+            .tituloMain {
+                font-family: $fontTitulos;
+                text-align: center;
+            }
+    }
+	.letraMain {
+		color: $colorLetra;
+		font-weight: normal;
+		font-family: $fontMain;
+		font-size: $fontSizeMainMediaQ !important;
+	}
 	#serviciosGrid {
 		display: flex;
 		flex-direction: column;
@@ -277,8 +143,8 @@ img {
 		display: grid;
 		width: 100%;
 		grid-template-columns: 95%;
-		grid-template-rows: 150px 100px 500px;
-		grid-template-areas: "a1" "b1" "c1" "d1";
+		grid-template-rows: 150px 50px 100px 500px;
+		grid-template-areas: "a1" "h1" "b1" "c1" "d1";
 		justify-items: center;
 		align-items: center;
 	}
